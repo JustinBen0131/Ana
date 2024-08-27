@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # List of run numbers
-runNumbers=("47495")
+runNumbers=("52104,52107,52111")
 
 # Loop over each run number and create a custom submission file
 for runNumber in "${runNumbers[@]}"; do
