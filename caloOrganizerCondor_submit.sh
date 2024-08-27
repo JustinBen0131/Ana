@@ -18,5 +18,5 @@ queue filename from dst_calo_run2pp-000${runNumber}.list
 EOL
 
   # Submit the job
-  condor_submit triggerCondor_${runNumber}.sub
+  condor_submit caloOrganizerCondor_${runNumber}.sub
 done
