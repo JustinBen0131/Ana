@@ -42,7 +42,9 @@ void Fun4All_CaloTreeGen(const int nEvents = 0, const std::string &listFile = "r
   calo->doZDC(0, "TOWERINFO_CALIB_ZDC");
 
   // Store GL1 Information?
+  calo->doTrig(0, "GL1Packet");
   calo->doTrig(1, "GL1Packet");
+  calo->doTrig(2, "GL1Packet");
 
   se->registerSubsystem(calo);
 
