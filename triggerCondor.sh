@@ -27,4 +27,4 @@ if [ -z "$filename" ]; then
 fi
 
 # Run the ROOT macro with dynamically generated output paths and log the output
-root -b -l -q "macros/Fun4All_Calo_Emulator.C(\"$filename\", $events, \"$treeOutName\")"
+root -b -l -q "macros/Fun4All_CaloTreeGen.C(\"$filename\", $events, \"$treeOutName\")"
