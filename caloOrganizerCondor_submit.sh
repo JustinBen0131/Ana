@@ -8,7 +8,7 @@ for runNumber in "${runNumbers[@]}"; do
   # Create a custom submission file for the current run number
   cat > triggerCondor_${runNumber}.sub <<EOL
 universe                = vanilla
-executable              = triggerCondor.sh
+executable              = caloOrganizerCondor.sh
 arguments               = ${runNumber} \$(filename) \$(Cluster)
 log                     = /sphenix/tg/tg01/bulk/jbennett/TriggerAna/log/job.\$(Cluster).\$(Process).log
 output                  = /sphenix/tg/tg01/bulk/jbennett/TriggerAna/stdout/job.\$(Cluster).\$(Process).out
