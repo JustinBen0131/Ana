@@ -26,7 +26,7 @@ void Fun4All_CaloTreeGen(const string &fname1, int nEvents = 0, const string &ou
 
   gSystem->Load("libg4dst");
 
-  caloTreeGen *calo = new caloTreeGen(inName);
+  caloTreeGen *calo = new caloTreeGen(outputFilename.c_str());
   // What subsystems do you want?
   calo->doEMCal(1, "TOWERINFO_CALIB_CEMC");
   // Store EMCal clusters?
