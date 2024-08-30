@@ -50,8 +50,7 @@ void Fun4All_CaloTreeGen(const string &fname1, int nEvents = 0, const string &ou
 
   Fun4AllInputManager *in = new Fun4AllDstInputManager("DSTcalo");
   //in->AddListFile(listFile); // this one for local running 
-  in->AddFile(listFile); // this one for condor running 
-
+  in->AddFile(fname1.c_str()); // this one for condor running
   se->registerInputManager(in);
 
   se->run(nEvents);
