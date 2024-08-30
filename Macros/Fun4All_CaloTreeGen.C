@@ -19,7 +19,7 @@ R__LOAD_LIBRARY(libfun4all.so)
 R__LOAD_LIBRARY(libffarawobjects.so)
 R__LOAD_LIBRARY(libcaloTreeGen.so)
 
-void Fun4All_CaloTreeGen(const int nEvents = 0, const std::string &listFile = "run43273.list", const std::string &inName = "commissioning.root")
+void Fun4All_CaloTreeGen(const string &fname1, int nEvents = 0, const string &outputFilename = "test.root")
 {
   Fun4AllServer *se = Fun4AllServer::instance();
   recoConsts *rc = recoConsts::instance();
